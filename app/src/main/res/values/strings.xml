@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ma famille</string>
+    <string name="title_section1">Flux d\'actualités</string>
+    <string name="title_section2">Conversations</string>
+    <string name="title_section3">Localisations</string>
+    <string name="title_section4">Compte</string>
+    <string name="title_section5">Réglages</string>
+    <string name="title_image_view">Image1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="lorem_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="lorem_2">Bacon ipsum dolor amet t-bone kevin, ball tip meatloaf turkey beef pork belly ribs drumstick sausage shankle.</string>
+    <string name="lorem_3">Integer sem quam!!!</string>
+    <string name="lorem_4">Quisque luctus arcu lorem ;-). Eu aliquam lacus eleifend eu. </string>
+    <string name="lorem_5">Phasellus varius tempus blandit. Cras ac commodo erat.</string>
+    <string name="lorem_6">Nullam et sapien vel lectus rhoncus egestas non ut arcu.</string>
+    <string name="marker_name_1">Jenny</string>
+    <string name="marker_name_2">Dad</string>
+    <string name="marker_name_3">Mom</string>
+    <string name="sign_in_action">Se connecter</string>
+    <string name="create_account">Créer mon compte!</string>
+</resources>

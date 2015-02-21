@@ -1,0 +1,228 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".HomeFragment">
+
+    <!-- LISTE DES CONVERSATIONS -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="575dp"
+        android:layout_gravity="left|top"
+        android:weightSum="1"
+        android:paddingTop="20dp">
+
+        <!-- UN MESSAGE -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/message_container1"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="11:57 SM"
+                android:id="@+id/textView"
+                android:layout_gravity="right|top" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/people_2"
+                android:id="@+id/image_message1"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dad"
+                android:id="@+id/textView5"
+                android:layout_gravity="left|top"
+                android:paddingLeft="80dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/lorem_1"
+                android:id="@+id/message1"
+                android:layout_gravity="center_horizontal|bottom"
+                android:paddingTop="15dp"
+                android:paddingLeft="80dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/ripple"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="12:13 PM"
+                android:id="@+id/textView8"
+                android:layout_gravity="right|top" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/people_3"
+                android:id="@+id/image_message2"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/lorem_2"
+                android:id="@+id/message2"
+                android:layout_gravity="left|bottom"
+                android:paddingTop="15dp"
+                android:paddingLeft="80dp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Jenny"
+                android:id="@+id/textView4"
+                android:layout_gravity="left|top"
+                android:paddingLeft="80dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/ripple"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="12:17 PM"
+                android:id="@+id/textView9"
+                android:layout_gravity="right|top" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/people_4"
+                android:id="@+id/image_message3"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/lorem_3"
+                android:id="@+id/message3"
+                android:layout_gravity="left|bottom"
+                android:paddingTop="15dp"
+                android:paddingLeft="80dp" />
+
+            <TextView
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mark Dearing "
+                android:id="@+id/textView6"
+                android:layout_gravity="left|top"
+                android:paddingLeft="80dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/ripple"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="12:48 PM"
+                android:id="@+id/textView10"
+                android:layout_gravity="right|top" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/people_5"
+                android:id="@+id/image_message4"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mom"
+                android:id="@+id/textView3"
+                android:layout_gravity="left|top"
+                android:paddingLeft="80dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/lorem_4"
+                android:id="@+id/message4"
+                android:layout_gravity="left|center_vertical"
+                android:paddingTop="15dp"
+                android:paddingLeft="80dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <com.ift215.tp3.ma_famille.FloatingActionButton
+            android:id="@+id/fab_1"
+            android:layout_width="@dimen/fab_size"
+            android:layout_height="@dimen/fab_size"
+            android:elevation="@dimen/fab_elevation"
+            android:background="@drawable/fab_background"
+            android:stateListAnimator="@animator/fab_anim"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="@dimen/fab_icon_size"
+                android:layout_height="@dimen/fab_icon_size"
+                android:src="@drawable/fab_icons"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"/>
+
+        </com.ift215.tp3.ma_famille.FloatingActionButton>
+    </FrameLayout>
+
+</FrameLayout>
