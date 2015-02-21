@@ -1,0 +1,16 @@
+<resources>
+    <string name="title_activity_login">Connexion</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Courriel</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="prompt_password_confirm">Confirmez votre mot de passe</string>
+    <string name="prompt_password_opt">Mot de passe (optionnel)</string>
+    <string name="action_sign_in">Se connecter ou se créer un compte</string>
+    <string name="action_sign_in_short">Se connecter</string>
+
+    <string name="error_invalid_email">Cette adresse courriel est invalide</string>
+    <string name="error_invalid_password">Le mot de passe choisi est trop court</string>
+    <string name="error_incorrect_password">Le mot de passe est invalide</string>
+    <string name="error_field_required">Ce champ est requis</string>
+</resources>
