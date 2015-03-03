@@ -5,9 +5,11 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -49,6 +51,9 @@ public class CreateAccountActivity extends Activity implements LoaderCallbacks<C
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
+    private EditText mPasswordConfirmView;
+    private EditText mFirstNameView;
+    private EditText mLastNameView;
     private View mProgressView;
     private View mLoginFormView;
 
@@ -75,6 +80,12 @@ public class CreateAccountActivity extends Activity implements LoaderCallbacks<C
                 return false;
             }
         });
+
+        mPasswordConfirmView = (EditText) findViewById(R.id.password_confirm);
+
+
+        mFirstNameView = (EditText) findViewById(R.id.first_name);
+        mLastNameView = (EditText) findViewById(R.id.last_name);
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
@@ -110,6 +121,9 @@ public class CreateAccountActivity extends Activity implements LoaderCallbacks<C
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        String passwordConfirm = mPasswordConfirmView.getText().toString();
+        String firstName = mFirstNameView.getText().toString();
+        String lastName = mLastNameView.getText().toString();
 
         boolean cancel = false;
         View focusView = null;
@@ -144,7 +158,7 @@ public class CreateAccountActivity extends Activity implements LoaderCallbacks<C
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
+            mAuthTask = new UserLoginTask(email, password, firstName, lastName);
             mAuthTask.execute((Void) null);
         }
     }
@@ -257,10 +271,14 @@ public class CreateAccountActivity extends Activity implements LoaderCallbacks<C
 
         private final String mEmail;
         private final String mPassword;
+        private final String mFirstName;
+        private final String mLastName;
 
-        UserLoginTask(String email, String password) {
+        UserLoginTask(String email, String password, String firstName, String lastName) {
             mEmail = email;
             mPassword = password;
+            mFirstName = firstName;
+            mLastName = lastName;
         }
 
         @Override
@@ -285,7 +303,22 @@ public class CreateAccountActivity extends Activity implements LoaderCallbacks<C
                 }
             }
 
+            SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(
+                    getString(R.string.user_profile_file_key), Context.MODE_PRIVATE);
 
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString(getString(R.string.email), mEmail);
+            editor.putString(getString(R.string.first_name), mFirstName);
+            editor.putString(getString(R.string.last_name), mLastName);
+            editor.commit();
+
+            SharedPreferences sharedPrefs = getApplicationContext().getSharedPreferences(
+                    getString(R.string.user_profile_file_key), Context.MODE_PRIVATE
+            );
+
+            System.out.println(sharedPrefs.getString(getString(R.string.email), "nope"));
+            System.out.println(sharedPrefs.getString(getString(R.string.first_name), "nope"));
+            System.out.println(sharedPrefs.getString(getString(R.string.last_name), "nope"));
 
             // TODO: register the new account here.
             return true;

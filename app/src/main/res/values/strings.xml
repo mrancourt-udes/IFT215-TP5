@@ -23,4 +23,10 @@
     <string name="marker_name_3">Mom</string>
     <string name="sign_in_action">Se connecter</string>
     <string name="create_account">Créer mon compte!</string>
+
+    <string name="user_profile_file_key">com.ift215.tp3.ma_famille.USER_PROFILE</string>
+    <string name="email">email</string>
+    <string name="first_name">last_name</string>
+    <string name="last_name">first_name</string>
+
 </resources>

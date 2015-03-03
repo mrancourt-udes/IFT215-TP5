@@ -18,7 +18,7 @@ public class MainActivity extends ActionBarActivity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
-    public static boolean isConnected = false;
+    public static boolean isConnected = true;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.

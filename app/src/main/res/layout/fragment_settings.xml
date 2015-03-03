@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Christopher Sanders"
-                android:id="@+id/textView12"
+                android:id="@+id/full_name"
                 android:layout_gravity="right|center_vertical" />
 
             <TextView
@@ -47,7 +47,7 @@
                 android:layout_height="34dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="ChristopherSanders@armyspy.com"
-                android:id="@+id/textView13"
+                android:id="@+id/email"
                 android:layout_gravity="right|bottom" />
 
         </FrameLayout>
