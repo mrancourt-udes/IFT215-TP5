@@ -29,7 +29,7 @@ Pour toutes les modifications (fichiers/modules/fonctionnalités)
 ###DELETE
 Suppression de fichiers
 
-##3. Configuration d'Éclipse
+##3. Configuration d'Android Studio 
 
 Pour éviter les problèmes de jeux de caractères divergeant, voici comment configurer Android Studio pour l'utilisation du jeu de caractère UTF-8
 
